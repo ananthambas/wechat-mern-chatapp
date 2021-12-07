@@ -1,0 +1,18 @@
+.home {
+    display: flex;
+    // flex-direction: column;
+    background-color: bisque;
+    height: calc(100vh - 3em);
+
+    .chatConverstations{
+        flex: 3;
+    }
+
+    .chatMessages {
+        flex: 6;
+    }
+
+    .chatContacts {
+        flex:3;
+    }
+}

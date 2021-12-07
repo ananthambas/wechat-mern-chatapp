@@ -1,0 +1,44 @@
+.contactspage {
+    // padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+
+    .contactSearch {
+        width: 100%;
+        // background-color: red;
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+
+        .contactInput {
+            width: 100%;
+            padding: 10px;
+            font-size: large;
+            padding-right: 50px;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* Opera/IE 8+ */
+        }
+
+        .searchIcon {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: x-large;
+            cursor: pointer;
+
+            &:hover {
+                // background-color: blue;
+                font-size: xx-large;
+            }
+        }
+    }
+
+    .searchText {
+        width: 100%;
+        color: red;
+        padding: 10px;
+       
+    }
+}

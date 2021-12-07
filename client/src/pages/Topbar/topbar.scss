@@ -1,0 +1,37 @@
+.topbar{
+    height: 3em;
+    background-color: rgb(92, 29, 92);
+    color: white;
+    // margin-top: 10px;
+
+    .topbarContainer {
+        // margin-top: 10px;
+        padding-top: 5px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        .topbarLeft{
+            padding-left: 3em;
+
+            span {
+                // font-weight: bold;
+                font-size: 30px;
+            }
+        }
+
+        .topbarCenter{
+            padding-top: 5px;
+        }
+
+        .topbarRight {
+            display: flex;
+            align-items: center;
+            padding-right: 3em;
+
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+}
