@@ -91,7 +91,7 @@ const MsgPage = ({ setIsMsgChanged }) => {
         // console.log(currentchat);
         // if (socket === null) {
         console.log("setting socket");
-        const socketRes = io("http://localhost:8700/");
+        const socketRes = io(process.env.REACT_APP_API_URL || "http://localhost:8700/");
         console.log(socketRes);
         // console.log(socketRes.Socket.id);
         setSocketio(socketRes);
