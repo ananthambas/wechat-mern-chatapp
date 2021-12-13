@@ -14,7 +14,7 @@ const cors = require("cors");
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:3000"
+        origin: "*"
     }
 });
 
@@ -84,7 +84,7 @@ dotenv.config();
 
 app.use(express.json());
 
-app.use(cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 }))
+app.use(cors({ origin: "*", optionsSuccessStatus: 200 }))
 
 app.use("/api/auth", authRoute);
 app.use("/api/conv", convRoute);
