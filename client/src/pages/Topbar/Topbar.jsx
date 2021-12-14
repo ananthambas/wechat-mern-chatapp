@@ -13,7 +13,7 @@ const Topbar = () => {
         <div className="topbar">
             <div className="topbarContainer">
                 <div className="topbarLeft">
-                    <span>WeChat</span>
+                    <span>WeChatt</span>
                 </div>
                 <div className="topbarCenter">
                     <span className="currentChat">{currFriend?.username}</span>
