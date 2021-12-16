@@ -1,6 +1,18 @@
 .contact {
     padding: 15px 5px;
-    border: 1px solid #000;
     cursor: pointer;
     height: 2em;
+    // background: rgb(217, 248, 255);
+    // background: linear-gradient(
+    //     0deg,
+    //     rgba(217, 248, 255, 1) 74%,
+    //     rgba(204, 232, 255, 1) 100%,
+    //     rgba(108, 188, 255, 1) 100%
+    // );
+    background: rgb(146, 170, 199);
+    background: linear-gradient(0deg, rgba(146, 170, 199, 1) 84%, rgba(255, 255, 255, 1) 100%);
+
+    &:hover {
+        border: 1px solid #000;
+    }
 }

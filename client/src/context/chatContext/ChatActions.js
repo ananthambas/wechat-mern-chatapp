@@ -11,8 +11,12 @@ export const chatSetCurrentFriend = (currFriend) => ({
     type: "SET_CURRENT_FRIEND",
     payload: currFriend,
 });
+
 export const chatSetCurrentConv = (currConv) => ({
     type: "SET_CURRENT_CONVERSATION",
     payload: currConv,
+});
+export const chatToggleContactsClicked = () => ({
+    type: "TOGGLE_CONTACTS_CLICKED",
 });
 

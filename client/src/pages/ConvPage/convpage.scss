@@ -2,6 +2,15 @@
     // padding: 10px;
     height: 100%;
     overflow-y: scroll;
-    background-color: #ff8b8b;
+    // background-color: #ff8b8b;
     // padding-bottom: 20px;
+    cursor: pointer;
+    background: var(--main-bg);
+    // background: rgb(255, 255, 255);
+    // background: linear-gradient(
+    //   41deg,
+    //   rgba(255, 255, 255, 1) 0%,
+    //   rgba(217, 248, 255, 1) 0%,
+    //   rgba(255, 255, 255, 1) 93%
+    // );
 }

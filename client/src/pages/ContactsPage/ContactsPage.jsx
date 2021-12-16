@@ -1,10 +1,10 @@
-import { SearchOutlined } from "@mui/icons-material";
+import { CancelOutlined, CancelPresentationOutlined, CloseOutlined, SearchOutlined } from "@mui/icons-material";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import Contact from "../../components/Contact/Contact";
 import { loginSuccess } from "../../context/authContext/AuthActions";
 import { AuthContext } from "../../context/authContext/AuthContext";
-import { chatSetCurrentConv } from "../../context/chatContext/ChatActions";
+import { chatSetCurrentConv, chatToggleContactsClicked } from "../../context/chatContext/ChatActions";
 import { ChatContext } from "../../context/chatContext/ChatContext";
 import axiosInstance from "../../misc/axiosInstance";
 import "./contactspage.scss"
@@ -86,6 +86,7 @@ const ContactsPage = () => {
                 }
                 // console.log(res.data);
                 dispatchChat(chatSetCurrentConv(res.data));
+                dispatchChat(chatToggleContactsClicked());
             } catch (err) {
                 console.log(err);
             }
@@ -107,8 +108,8 @@ const ContactsPage = () => {
     return (
         <div className="contactspage">
             <div className="contactSearch">
-                <input type="text" className="contactInput" maxLength="15" onChange={(e) => handleSearchInput(e)} placeholder="Search/Add Contacts" />
-                <SearchOutlined className="searchIcon" />
+                <input type="text" value={searchText} className="contactInput" maxLength="15" onChange={(e) => handleSearchInput(e)} placeholder="Search/Add Contacts" />
+                <CloseOutlined className="searchIcon" onClick={() => setSearchText("")}/>
             </div>
             {searchText ?
                 (searchContact.length ?

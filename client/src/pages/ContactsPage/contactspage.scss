@@ -3,6 +3,7 @@
     height: 100%;
     overflow-y: scroll;
     width: 100%;
+    background: var(--main-bg);
 
     .contactSearch {
         width: 100%;
@@ -24,19 +25,20 @@
         .searchIcon {
             position: absolute;
             right: 10px;
-            top: 5px;
+            top: 18px;
             font-size: x-large;
             cursor: pointer;
 
             &:hover {
                 // background-color: blue;
-                font-size: xx-large;
+                // font-size: xx-large;
+                border: 1px solid #ccc;
             }
         }
     }
 
     .searchText {
-        width: 100%;
+        // width: 100%;
         color: red;
         padding: 10px;
        

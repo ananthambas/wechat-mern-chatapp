@@ -9,6 +9,7 @@ const INITIAL_STATE = {
     currConv: {},
     contacts: [],
     conv: [],
+    isContactsClicked: false,
 };
 
 export const ChatContext = createContext(INITIAL_STATE);
@@ -28,6 +29,7 @@ export const ChatContextProvider = ({ children }) => {
                 currChat: state.currChat,
                 currConv: state.currConv,
                 contacts: state.contacts,
+                isContactsClicked: state.isContactsClicked,
                 dispatch
             }}>
             {children}

@@ -20,6 +20,11 @@ const ChatReducer = (state, action) => {
                 ...state,
                 currConv: action.payload
             };
+        case "TOGGLE_CONTACTS_CLICKED":
+            return {
+                ...state,
+                isContactsClicked: !state.isContactsClicked
+            };
         default:
             return { ...state };
     }

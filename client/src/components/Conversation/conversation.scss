@@ -1,8 +1,10 @@
 .conversation {
     padding: 10px 5px;
-    border: 1px solid #000;
+    // border: 1px solid #000;
     height: 3em;
-
+    background: rgb(146, 170, 199);
+    background: linear-gradient(0deg, rgba(146, 170, 199, 1) 84%, rgba(255, 255, 255, 1) 100%);
+    color: white;
     .convTop {
         display: flex;
         justify-content: space-between;
@@ -24,6 +26,10 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
+    }
+
+    &:hover {
+        border: 1px solid #000;
     }
 }
 

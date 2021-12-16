@@ -1,17 +1,22 @@
-.topbar{
+.topbar {
     height: 3em;
-    background-color: rgb(92, 29, 92);
+    background: rgb(250,168,168);
+background: linear-gradient(41deg, rgba(250,168,168,1) 0%, rgba(237,87,82,1) 13%, rgba(237,87,82,1) 56%, rgba(255,102,102,1) 100%);
+
     color: white;
+    // position: sticky;
+    // top: 0;
     // margin-top: 10px;
 
     .topbarContainer {
         // margin-top: 10px;
         padding-top: 5px;
+        margin-bottom: 10px;
         display: flex;
         // align-items: center;
         justify-content: space-between;
 
-        .topbarLeft{
+        .topbarLeft {
             padding-left: 3em;
 
             span {
@@ -20,18 +25,34 @@
             }
         }
 
-        .topbarCenter{
+        .topbarCenter {
             padding-top: 5px;
         }
 
         .topbarRight {
             display: flex;
-            align-items: center;
+            // align-items: center;
             padding-right: 3em;
+            padding-top: 5px;
 
-            span{
+            span {
+                margin-left: 15px;
                 cursor: pointer;
             }
         }
+    }
+
+    .topIcon {
+        margin-left: 15px;
+        cursor: pointer;
+        // background: #ddd;
+        
+        &:hover {
+            border: 1px solid #ccc;
+            // color: blue;
+        }
+    }
+    .topIcon.selected{
+        background-color: gray;
     }
 }
